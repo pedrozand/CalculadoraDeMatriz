@@ -1,0 +1,34 @@
+package lp;
+
+import java.util.Scanner;
+
+/*
+ *  	ADRIEL LOPES DOS SANTOS   - RA: 1830482111010
+ *  	HENRIQUE SANTANA DA SILVA - RA: 1830482111027
+ *  	PEDRO HENRIQUE OLIVEIRA   - RA: 1830482111013
+ *  	BEATRIZ VOLPONE DE SOUZA  - RA: 1830482111009
+ *  	TAÍSE MIGUEL RODRIGUES    - RA: 1830482111046
+ */
+
+public class Leitura {
+	// Burocracia de preparo do Scanner, como objeto privativo/exclusivo desta classe
+	private static Scanner teclado = new Scanner(System.in);	
+	
+	public static int inteiro(String mensagem) {
+		System.out.print(mensagem);					// Impressão da mensagem p/ orientação do usuário
+		int valor = teclado.nextInt();				// Leitura do valor (inteiro, int)
+		return valor;								// Retorno do valor lido
+	}
+
+	public static double real(String mensagem) {
+		System.out.print(mensagem);					// Impressão da mensagem p/ orientação do usuário
+		double valor = teclado.nextDouble();		// Leitura do valor (real, double)
+		return valor;								// Retorno do valor lido
+	}
+
+	public static String string(String mensagem) {
+		System.out.print(mensagem);					// Impressão da mensagem p/ orientação do usuário
+		String valor = teclado.nextLine();			// Leitura do valor (cadeia, String)
+		return valor;								// Retorno do valor lido
+	}
+}
